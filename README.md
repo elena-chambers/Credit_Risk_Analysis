@@ -14,39 +14,51 @@ The overarching goal of this project is to use machine learning to predict credi
 ## Oversampling Techniques
 
 #### Naive Random Oversampling
+From sklearn.metrics, the balanced_accuracy_score = 65.5%.
 <img width="377" alt="Screen Shot 2022-01-30 at 3 05 49 PM" src="https://user-images.githubusercontent.com/91163155/151717799-dc3a412a-41eb-4881-bf43-94b3aba76213.png">
 <img width="628" alt="Screen Shot 2022-01-30 at 3 05 57 PM" src="https://user-images.githubusercontent.com/91163155/151717808-d042d33f-9ade-4d62-b97a-0893d7953000.png">
+- high_risk f1 score is 0.01 (very low, high imbalance between precision and sensitivity. 
+- high_risk precision is 0.01, recall is 70%
 
 #### SMOTE Oversamping
+From sklearn.metrics, the balanced_accuracy_score = 65.3%.
 <img width="377" alt="Screen Shot 2022-01-30 at 3 06 12 PM" src="https://user-images.githubusercontent.com/91163155/151717821-62c71530-335d-4e89-8c21-ebc62dda091e.png">
 <img width="625" alt="Screen Shot 2022-01-30 at 3 06 24 PM" src="https://user-images.githubusercontent.com/91163155/151717828-d7cd003f-d09d-4415-a8b8-601d0193cd27.png">
-
+- high_risk recall is 62%
 
 ## Undersampling Techniques
 #### Cluster Centroids
+From sklearn.metrics, the balanced_accuracy_score = 65.4%.
 <img width="383" alt="Screen Shot 2022-01-30 at 3 06 40 PM" src="https://user-images.githubusercontent.com/91163155/151717835-fce2f1b4-a7eb-416b-95a8-d9de0b358367.png">
 
 <img width="627" alt="Screen Shot 2022-01-30 at 3 06 51 PM" src="https://user-images.githubusercontent.com/91163155/151717846-73054014-7a0c-4374-a36e-51d383628f44.png">
-
+- high_risk recall is 65%
 
 ## Combination (Over & Under) Sampling
 #### SMOTEENN 
+From sklearn.metrics, the balanced_accuracy_score = 52.5%.
 <img width="377" alt="Screen Shot 2022-01-30 at 3 07 10 PM" src="https://user-images.githubusercontent.com/91163155/151717856-0fcd5c1f-fa99-4dbb-b1a1-449fe305b701.png">
 <img width="622" alt="Screen Shot 2022-01-30 at 3 07 21 PM" src="https://user-images.githubusercontent.com/91163155/151717867-03e5bd70-4ad8-4b62-bb32-20c03473fd64.png">
+- high_risk recall is 72%
 
 
 
 ## Ensemble Learners
 #### Balanced Random Forest
+From sklearn.metrics, the balanced_accuracy_score = 87.4%. 
+
 <img width="382" alt="Screen Shot 2022-01-30 at 3 07 55 PM" src="https://user-images.githubusercontent.com/91163155/151717893-5367c72c-6761-4df9-a4dc-4b965924b968.png">
 <img width="418" alt="Screen Shot 2022-01-30 at 3 08 07 PM" src="https://user-images.githubusercontent.com/91163155/151717897-23aa430b-b370-4eb0-9931-9fe68b6341ab.png">
 
 <img width="636" alt="Screen Shot 2022-01-30 at 3 08 40 PM" src="https://user-images.githubusercontent.com/91163155/151717916-ebf8fdb3-d9c4-407f-9c58-ee2b57f93899.png">
-
+- high_risk recall is 68%
+- may be overfitting; high accuracy but lowish recall
 
 #### Easy Ensemble AdaBoost 
+From sklearn.metrics, the balanced_accuracy_score = 93.2%. 
+
 <img width="384" alt="Screen Shot 2022-01-30 at 3 08 55 PM" src="https://user-images.githubusercontent.com/91163155/151717928-e22b9652-a7bc-4798-b93f-42153a9b5beb.png">
 <img width="627" alt="Screen Shot 2022-01-30 at 3 09 04 PM" src="https://user-images.githubusercontent.com/91163155/151717937-233ab47a-f6eb-4327-a54a-48154d9f5d2e.png">
-
+- high_risk recall is 92%
 
 ## Summary
