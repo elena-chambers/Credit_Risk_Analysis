@@ -15,7 +15,7 @@ The overarching goal of this project is to use machine learning to predict credi
 
 #### Naive Random Oversampling
 - From sklearn.metrics, the balanced_accuracy_score = 65.5%.
-- high_risk f1 score is 0.01 (very low, high imbalance between precision and sensitivity. 
+- high_risk f1 score is 0.01 
 - high_risk precision is 0.01, recall is 70%
 <img width="377" alt="Screen Shot 2022-01-30 at 3 05 49 PM" src="https://user-images.githubusercontent.com/91163155/151717799-dc3a412a-41eb-4881-bf43-94b3aba76213.png">
 <img width="628" alt="Screen Shot 2022-01-30 at 3 05 57 PM" src="https://user-images.githubusercontent.com/91163155/151717808-d042d33f-9ade-4d62-b97a-0893d7953000.png">
